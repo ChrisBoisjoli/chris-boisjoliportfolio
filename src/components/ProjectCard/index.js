@@ -5,21 +5,20 @@ function PortfolioCard(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img
-          alt={props.name}
-          src={props.image}
-        />
+        <img alt={props.name} src={props.image} />
       </div>
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong>{props.name}
+            <strong>Project:</strong>
+            {props.name}
+          </li>
+          <li> 
+            <strong>Link:</strong> 
+            {props.link}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.Location}
+            <strong>Description:</strong> {props.description}
           </li>
         </ul>
       </div>
