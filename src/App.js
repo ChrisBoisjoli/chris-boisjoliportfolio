@@ -14,6 +14,7 @@ function App() {
       name={projects[0].name}
       image={projects[0].image }
       link={projects[0].link}
+      github={projects[0].github}
       description={projects[0].description}/>
     </Wrapper>
   );

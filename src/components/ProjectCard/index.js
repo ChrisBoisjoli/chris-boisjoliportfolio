@@ -10,15 +10,19 @@ function PortfolioCard(props) {
       <div className="content">
         <ul>
           <li>
-            <strong>Project:</strong>
+            <strong>Project Name: </strong>
             {props.name}
           </li>
           <li> 
-            <strong>Link:</strong> 
-            {props.link}
+            <strong>Live Page: </strong> <a href={props.link} >{props.name}</a>
+            
+          </li>
+          <li> 
+            <strong>Github Page:</strong> <a href={props.github}>{props.name}</a>
+            
           </li>
           <li>
-            <strong>Description:</strong> {props.description}
+            <strong>Description: </strong> {props.description}
           </li>
         </ul>
       </div>
